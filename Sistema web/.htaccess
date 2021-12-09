@@ -1,7 +1,0 @@
-ErrorDocument 404 https://localhost/ProyectoFinal/menu/index.php
-
-# HTID:18340776: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
-php_value display_errors 1
-
-php_flag output_buffering on
-# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18340776:
