@@ -1,0 +1,257 @@
+/* Fuentes de Letras */
+
+/* Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+/* Cuerpo CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/1.png) no-repeat center top;
+}
+/* body {
+    background: linear-gradient(150deg, #ff1900,  rgb(0, 0, 0), #ffee03);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
+}
+
+ @keyframes BgGradient {
+    0% {background-position: 0% 25%;}
+    20% {background-position: 25% 50%;}
+    45% {background-position: 50% 75%;}
+    75% {background-position: 75% 100%;}
+    100% {background-position: 100% 0%;}
+}  */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.div__main{
+    background-color: #fff;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0.25rem;
+}
+.div__login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.div__login-form{
+    margin-right: 40px;
+}
+
+form{
+    height: 100%;
+    width: 400px;
+    margin-top: 30px;
+    padding: 20px 20px 20px;
+}
+
+.div__content{
+    height: 50px;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    padding-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+h3{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+label,a,input,button,p{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.label__login,.input__login{
+    font-size: 14px;
+}
+
+.a__recuperacion{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.div__recuperacion{
+    padding-top: 1rem;
+    text-align:right;
+}
+.login__img{
+    max-width: 100%;
+    height:auto;
+    border-radius: 0.25rem;
+}
+
+.div__botones{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.a__enviar,.a__google{
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+.a__enviar{
+    background-color: black;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+.a__google{
+    color: #000;
+    border: 1px solid #000;
+    margin-top: .1rem;
+}
+
+.img__google{
+    margin-right: 0.5rem;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.div__main_recovery{
+    background-color: #fff;
+    max-width: 1000px;
+    padding: 10px 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0.25rem;
+}
+p{
+    padding-top: 0.05rem;
+    text-align:left;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 0, 0);
+}
+
+.modal__big{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__error{
+    padding: 2rem;
+    position:relative;
+    background-color:#fff;
+    padding: 1.5rem;
+    border-radius: .5rem
+}
+
+.btn_div{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align:right;
+}
+.h1__error{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 35px;
+}
+.h3__error{
+    margin-top: 0;
+}
+
+/* Active Modal */
+.active-modal{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.input__login2{
+    width: 100%;
+    height: 75%;
+    border-radius: 0;
+    border: 1px solid #000;
+    padding: 0 10px;
+    border-radius: 0.25rem;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 725px){
+    .login__img{
+        display: none;
+    }
+    
+    body{
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .div__main{
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        padding: 0;
+    }
+    .div__main_recovery{
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        padding: 0;
+    }
+    form{
+        height: 100%;
+        width: 100%;
+        margin-top: 60px;
+        padding: 40px 0 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .div__login-image{
+        display: none;
+    }
+    .div__login{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    body{
+        background: white;
+    }
+}
+
